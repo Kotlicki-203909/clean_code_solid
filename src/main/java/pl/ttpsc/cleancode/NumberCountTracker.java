@@ -31,7 +31,7 @@ public class NumberCountTracker {
         if (numbersToCounts.containsKey(number)) {
             increaseAmountOfNumber(number);
         } else {
-            insertNewNumber();
+            insertNewNumber(number);
         }
 
         adjustExtrema(number);
