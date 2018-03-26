@@ -1,6 +1,6 @@
 package pl.ttpsc.solid.ocp.usa.solution;
 
-public class GeorgiaSpeedLimit implements StateOfAmericaSpeedLimit
+public class GeorgiaSpeedLimit implements IStateOfAmericaSpeedLimit
 {
     static double MAX_SPEED = 0.0;
 

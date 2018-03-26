@@ -1,6 +1,6 @@
 package pl.ttpsc.solid.lsp.shape;
 
-public interface Shape {
+public interface IShape {
     double getSurfaceArea();
     double getCircumference();
 }

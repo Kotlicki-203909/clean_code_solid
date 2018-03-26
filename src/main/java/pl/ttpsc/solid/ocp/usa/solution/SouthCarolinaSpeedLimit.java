@@ -1,6 +1,6 @@
 package pl.ttpsc.solid.ocp.usa.solution;
 
-public class SouthCarolinaSpeedLimit implements StateOfAmericaSpeedLimit
+public class SouthCarolinaSpeedLimit implements IStateOfAmericaSpeedLimit
 {
     static double MAX_SPEED = 0.0;
     static double EXCEED_BY_TEN_MULTIPLIER = 2.0;

@@ -1,5 +1,5 @@
 package pl.ttpsc.solid.ocp.usa.solution;
 
-public interface StateOfAmericaSpeedLimit {
+public interface IStateOfAmericaSpeedLimit {
     public double calculateFine(double speed);
 }

@@ -1,6 +1,6 @@
 package pl.ttpsc.solid.lsp.shape;
 
-public class Square implements Shape {
+public class Square implements IShape {
     double a;
 
     public Square(double a) {

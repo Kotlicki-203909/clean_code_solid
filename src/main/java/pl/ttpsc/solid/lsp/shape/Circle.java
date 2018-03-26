@@ -1,6 +1,6 @@
 package pl.ttpsc.solid.lsp.shape;
 
-public class Circle implements Shape {
+public class Circle implements IShape {
     double radius;
 
     public Circle(double radius) {

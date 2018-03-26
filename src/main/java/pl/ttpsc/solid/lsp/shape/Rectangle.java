@@ -1,6 +1,6 @@
 package pl.ttpsc.solid.lsp.shape;
 
-public class Rectangle implements Shape {
+public class Rectangle implements IShape {
     double a;
     double b;
 
