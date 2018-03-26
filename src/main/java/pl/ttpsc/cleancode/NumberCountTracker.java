@@ -10,8 +10,16 @@ public class NumberCountTracker {
 
     Map<Integer, Integer> numbersToCounts = new HashMap<Integer, Integer>();
 
-    private int largestNumberInSet = Integer.MIN_VALUE;
-    private int leastNumberInSet = Integer.MAX_VALUE;
+    private int maximum = Integer.MIN_VALUE;
+    private int minimum = Integer.MAX_VALUE;
+
+    public int getMinimum(){
+        return minimum;
+    }
+
+    public int getMaximum(){
+        return maximum;
+    }
 
     public void insertSetOfNumbers(List<Integer> numbers) {
         for(int number : numbers){
@@ -34,17 +42,17 @@ public class NumberCountTracker {
         numbersToCounts.put(number, value + 1);
     }
 
-    private void insertNewNumber() {
-        numbersToCounts.put(1, 1);
+    private void insertNewNumber(Integer number) {
+        numbersToCounts.put(number, 1);
     }
 
     private void adjustExtrema(Integer number) {
-        if (number > largestNumberInSet) {
-            largestNumberInSet = number;
+        if (number > maximum) {
+            maximum = number;
         }
 
-        if (number < leastNumberInSet) {
-            leastNumberInSet = number;
+        if (number < minimum) {
+            minimum = number;
         }
     }
 
